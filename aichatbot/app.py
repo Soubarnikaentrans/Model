@@ -26,7 +26,7 @@ def preprocess_text(text):
     tokens = [[token for token in sentence if token not in stopwords.words('english')] for sentence in tokens]
     return [" ".join(sentence) for sentence in tokens], sentences
 
-pdf_path = 'C:\\Users\\User\\Documents\\Python\\aichatbot\\report.pdf'  
+pdf_path = 'aichatbot\\report.pdf'  
 pdf_text = extract_text_from_pdf(pdf_path)
 processed_text, original_sentences = preprocess_text(pdf_text)
 
